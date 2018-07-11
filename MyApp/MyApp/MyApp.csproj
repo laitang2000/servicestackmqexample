@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.2" />
+    <PackageReference Include="ServiceStack" Version="5.1.1" />
+    <PackageReference Include="ServiceStack.Azure" Version="5.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyApp.ServiceInterface\MyApp.ServiceInterface.csproj" />
+    <ProjectReference Include="..\MyApp.ServiceModel\MyApp.ServiceModel.csproj" />
+    <ProjectReference Include="..\SSWindowsService\SSWindowsService.ServiceModel\SSWindowsService.ServiceModel.csproj" />
+  </ItemGroup>
+
+</Project>
